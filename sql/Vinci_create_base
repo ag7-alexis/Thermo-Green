@@ -1,0 +1,7 @@
+-- AGU 25-11-2019 CREATION
+--
+CREATE USER vinci_user LOGIN SUPERUSER PASSWORD 'P@ssw0rdsio';
+--
+CREATE DATABASE DB_Vinci OWNER vinci_user;
+--
+\c DB_Vinci vinci_user

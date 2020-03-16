@@ -1,0 +1,21 @@
+-- AGU 25-11-2019 CREATION
+--
+CREATE TABLE ZONE (
+id_zone			CHAR(1),
+nom_zone		VARCHAR(10),
+CONSTRAINT PK_ZONE PRIMARY KEY (id_zone)
+);
+--
+CREATE TABLE RELEVE (
+date_relev		DATE,
+heure_relev		INT,
+temp_relev		DECIMAL(4, 2),
+id_zone			CHAR(1),
+id_relev		SERIAL,
+CONSTRAINT PK_RELEVE PRIMARY KEY (id_relev),
+CONSTRAINT FK_RELEVE_ZONE FOREIGN KEY (id_zone) REFERENCES ZONE(id_zone)
+);
+
+
+
+
