@@ -17,7 +17,7 @@ public class AccesData {
     private final Main main;
     private final String url = "jdbc:postgresql://localhost/DB_Vinci";
     private final String user = "vinci_user";
-    private final String password = "P@ssw0rdsio";
+    private final String password = "***";
     
     /**
      * @param main
